@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tenniscourt"
+    tools:context="com.example.android.tenniscounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#57D3D3D3"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/PlayerOne"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#57D3D3D3"
+                android:gravity="center"
+                android:text="@string/GamePlayer1"
+                android:textColor="#FFF"
+                android:textSize="56sp" />
+
+            <TextView
+                android:id="@+id/team_a_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#57D3D3D3"
+                android:text="@string/PointPlayer1"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fifteenForPlayerOne"
+                android:paddingTop="8dp"
+                android:text="@string/fifteen"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="thirtyForPlayerOne"
+                android:paddingTop="8dp"
+                android:text="@string/thirty"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fortyForPlayerOne"
+                android:paddingTop="8dp"
+                android:text="@string/forty"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="AdvantageInForPlayerOne"
+                    android:text="@string/AdvantageIn"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="GamePlayerOne"
+                    android:paddingTop="8dp"
+                    android:text="@string/Game"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#57D3D3D3"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/PlayerTwo"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#57D3D3D3"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="@string/GamePlayer2"
+                android:textColor="#FFF"
+                android:textSize="56sp" />
+
+            <TextView
+                android:id="@+id/team_b_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#57D3D3D3"
+                android:gravity="left"
+                android:text="@string/PointPlayer2"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fifteenForPlayerTwo"
+                android:paddingTop="8dp"
+                android:text="@string/fifteen"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="thirtyForPlayerTwo"
+                android:paddingTop="8dp"
+                android:text="@string/thirty"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fortyForPlayerTwo"
+                android:paddingTop="8dp"
+                android:text="@string/forty"
+                android:textAlignment="center"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="AdvantageInForPlayerTwo"
+                    android:text="@string/AdvantageIn"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="GamePlayerTwo"
+                    android:paddingTop="8dp"
+                    android:text="@string/Game"
+                    android:textAlignment="center"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+        android:onClick="Reset"
+        android:text="@string/ResetScore"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reset_button"
+        android:layout_centerInParent="true"
+        android:onClick="Deuce"
+        android:text="@string/deuce">
+
+    </Button>
+
+
+</RelativeLayout>

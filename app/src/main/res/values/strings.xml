@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TennisCounter</string>
+    <string name="PlayerOne">Player 1</string>
+    <string name="PlayerTwo">Player 2</string>
+    <string name="GamePlayer1">0</string>
+    <string name="GamePlayer2">0</string>
+    <string name="PointPlayer1">Points: 0</string>
+    <string name="PointPlayer2">Points: 0</string>
+    <string name="love">0</string>
+    <string name="fifteen">15</string>
+    <string name="thirty">30</string>
+    <string name="forty">40</string>
+    <string name="deuce">Deuce</string>
+    <string name="AdvantageIn"> Ad</string>
+    <string name="ResetScore">Reset</string>
+    <string name="Game">Game</string>
+
+</resources>
+
